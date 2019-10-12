@@ -1,0 +1,138 @@
+.header{
+    height:22em;
+    width:100%;
+    background-color: black;
+    text-align: center;
+}
+#logo{
+    margin: 0 auto;
+}
+.footer{
+    height:20em;
+    width:100%;
+    background-color: black;
+}
+button {
+    
+    background: transparent;
+    text-shadow: 1px 1px 1px #202020;
+    font-family: "Lato", sans-serif;
+    font-size: 9pt;
+    border: 1px solid lightblue;
+    color: lightblue;
+  }
+  
+
+body{
+    width:100%;
+}
+#container{
+    background-color: white;
+    display: flex;
+    width:90%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-flow: wrap;
+    margin:0 auto;
+
+}
+.cards{display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    margin:1vw;
+    width: 23%;
+    height:45%;
+    color:white;
+    background-color: black;
+    border-radius: 15px;
+    visibility: hidden;
+
+}
+.cards:hover{
+    visibility: visible ;
+    transform: scale(1.2);
+  
+}
+.poster{
+    visibility: visible;
+    width: 70%;
+    height:101%;
+    border-radius: 15px 0 0  13px ;
+}
+.title{
+    margin-top:30%;
+    width:30%;
+    text-align: center;
+    float: center;
+}
+.poster:hover .cards{
+    visibility: visible;
+}
+
+/** navi bar **/
+@import url('https://fonts.googleapis.com/css?family=Atomic+Age');
+
+*{
+  color:white;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-family: 'Atomic Age', cursive;
+}
+
+h1{
+	background-color: #391F65;
+	color: white;
+	padding: 30px;
+	text-align: center;
+	margin: 0;
+	text-transform: capitalize;
+}nav {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: gold;
+  border-bottom: 5px solid #DFB804; }
+
+input {
+  display: none; }
+
+nav label {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  width: 60px;
+  height: 60px;
+  
+  padding: 25px 0 20px 50px;
+  cursor: pointer;
+  user-select: none;
+  font-size: 25px;
+  display: none; }
+
+nav ul {
+  list-style-type: none;
+  margin: 0; }
+
+nav ul li {
+  display: inline-block;
+  padding: 12px 15px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.5s; }
+
+nav ul li div {
+  width: 0;
+  height: 3px;
+  background-color: #f9e357;
+  transition: width 0.4s; }
+nav ul li:hover > div {
+  width: 100%; }
+
+nav ul li:hover {
+  background-color: #D6B813; }
+
+
+
