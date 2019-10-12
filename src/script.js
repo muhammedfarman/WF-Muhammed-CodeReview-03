@@ -32,23 +32,20 @@ for (var i = 0; i < movie.length; i++) {
 }
 
 
-
 // like clicks counter//
-var button = document.getElementById("clickme0"),
- count = 125;
-button.onclick = function() {
-  count += 1;
-  button.innerHTML = "LIKE : " + count;
-};
-var button1 = document.getElementById("clickme1"),
-  count1 = 0;
-button1.onclick = function() {
-  count1 += 1;
-  button1.innerHTML = "LIKE : " + count1;
-};
-var button2 = document.getElementById("clickme2"),
-  count2 = 0;
-button2.onclick = function() {
-  count2 += 1;
-  button2.innerHTML = "LIKE: " + count2;
-};
+let buttons = document.querySelectorAll('.counter');
+like(buttons);
+function like() {
+    for (let but of buttons) {
+        but.addEventListener('click', (e) => {
+            let x = e.target.attributes[2].value;
+            let ct = e.target.parentNode.children[0];
+            let c = e.target.parentNode.children[0].innerText.split(" ")[2];
+            c++;
+            ct.innerHTML = "LIKE : " + c;
+        })
+    };
+}
+// end like clicks counter//
+
+
