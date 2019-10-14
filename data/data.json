@@ -1,18 +1,18 @@
 var movie = [
     {
-        "id":"0",
+        "id": 0,
         "likes" : 123,
         "title" :"Gemini Man",
         "info" : "Henry Brogan is an elite assassin who becomes the target of a mysterious operative ",
          "img":"img/dead-center.jpg",
     },{
-        "id":"1",
+        "id": 1,
         "likes" : 12,
         "title" :"Gemini Man1",
         "info" : "Henry Brogan is an elite assassin who becomes the target of a mysterious operative ",
          "img":"img/sm1.jpg",
     },{
-        "id":"2",
+        "id": 2,
         "likes" : 80,
         "title" :"Gemini Man2",
         "info" : "Henry Brogan is an elite assassin who becomes the target of a mysterious operative ",
