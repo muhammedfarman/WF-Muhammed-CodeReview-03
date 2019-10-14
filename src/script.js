@@ -28,8 +28,6 @@ function output() {
 }
 
 //LOAD input from json//
-
-
 output(movies);
 //call like function //
 likecounter();
@@ -57,8 +55,7 @@ function likecounter() {
 //// sorting button ////
 
 let moviesorted = [];
-moviesorted = movie;
-
+moviesorted = movie; // saved the array in a new variable//
 function sorting() {
 
 
@@ -69,6 +66,7 @@ function sorting() {
 
 }
 let sortbutton = document.getElementById("sort1");
+// calling all functions with event listener//
 sortbutton.addEventListener('click', () => {
 
     removeold();//remove old container stuff
